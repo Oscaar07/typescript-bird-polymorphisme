@@ -1,0 +1,28 @@
+@startuml
+
+skinparam style strictuml
+skinparam backgroundcolor transparent
+skinparam groupInheritance 2
+hide empty members
+
+class Bird {
+    type: String
+    numberOfCoconuts: number
+    voltage: number
+
+    getPlumage(): String
+}
+
+class EuropeanSwallow extends Bird {
+    getPlumage(): String
+}
+
+class NorwegianBlue extends Bird {
+    getPlumage(): String
+}
+
+class AfricanSwallow extends Bird {
+    getPlumage(): String
+}
+
+@enduml
